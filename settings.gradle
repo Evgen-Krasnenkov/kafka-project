@@ -3,4 +3,5 @@ include 'kafka-mid'
 include 'kafka-producer-wiki'
 include 'kafka-comsumer-opensearch'
 include 'kafka-consumer'
+include 'stream-kafka-wikimedia'
 
