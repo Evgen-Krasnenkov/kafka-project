@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class WikimediaChangesProducer {
     public static final Logger log = LoggerFactory.getLogger(WikimediaChangesProducer.class.getSimpleName());
     public static void main(String[] args) {
-        String bootstrapServers = "127.0.0.1:9092";
+        String bootstrapServers = "http://localhost:9092";
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
